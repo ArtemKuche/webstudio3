@@ -277,13 +277,31 @@ color: #2196f3;
   padding-bottom: 60px;
 }
 
+.footer-position{
+  display: flex;
+  align-items: center;
+
+}
 
 
+
+
+.footer-socials{
+  margin-left: 70px;
+  margin-top: 12px;
+
+}
+
+.footer-socials-title{
+
+}
 
 .location{
 line-height: 1.71;
 color: #fff;
 }
+
+
 
 
 .footers-contacts-link{
