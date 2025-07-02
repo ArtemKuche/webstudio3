@@ -23,13 +23,49 @@
     <!-- Шапка Сайту -->
     <header class="header">
       <div class="container header-position">
-        <a class="logo" href="/"
-          >Web<span class="header-studio">Studio</span></a
-        >
+        <a class="logo" href="/">
+          Web<span class="header-studio">Studio</span>
+        </a>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <button class="modal-close-btn" type="button" id="closeModal">
+              <span class="close">&times;</span>
+            </button>
+            <h3 class="modal-text">Залиште свої дані, ми вам передзвонимо</h3>
+            <form class="modal-form">
+              <label class="label">Ім’я</label>
+              <input class="input" type="text"  required />
+
+              <label class="label">Телефон</label>
+              <input class="input" type="tel"  required />
+
+              <label class="label">Пошта</label>
+              <input class="input" type="email"  required />
+
+              <label class="label">Коментар</label>
+              <textarea class="textarea" ></textarea>
+
+              <label class="checkbox">
+                <input type="checkbox" required />
+              
+                
+                <p id="main-text-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" id="secondary-text-checkbox">Умови договору</a> </p>
+
+              </label>
+
+              <button class="submit" type="submit">Відправити</button>
+            </form>
+          </div>
+        </div>
+
+        <script src="./script.js"></script>
+
         <nav class="nav">
           <ul class="menu">
             <li class="menu-item">
-              <a class="menu-link" href="#">Студія</a>
+              <a class="menu-link" href="#" id="openModalBtn">Студія</a>
             </li>
             <li class="menu-item">
               <a class="menu-link" href="./portfolio.html">Портфоліо</a>
@@ -132,6 +168,7 @@
                 src="./images/we_do1.jpg"
                 alt="coding on tablet"
               />
+              <div class="image-caption">Десктопні додатки</div>
             </li>
             <li class="services-item">
               <img
@@ -139,6 +176,7 @@
                 src="./images/we_do2.jpg"
                 alt="women with the phone"
               />
+              <div class="image-caption">Мобільні додатки</div>
             </li>
             <li class="services-item">
               <img
@@ -146,6 +184,7 @@
                 src="./images/we_do3.jpg"
                 alt="The view on the tablet"
               />
+              <div class="image-caption">Дизайнерські рішення</div>
             </li>
           </ul>
         </div>
@@ -386,6 +425,10 @@
                 </svg>
               </a>
             </li>
+          </ul>
+          <ul class="receiver-message">
+            <h2 class="emailsreceivetitle">Підписатись на розсилку</h2>
+            <input class="emails" placeholder="E-mail"></input><button><img src="./images/telegram.png"></button>
           </ul>
         </div>
       </div>
