@@ -27,45 +27,14 @@
           Web<span class="header-studio">Studio</span>
         </a>
 
-        <!-- Modal -->
-        <div id="modal" class="modal">
-          <div class="modal-content">
-            <button class="modal-close-btn" type="button" id="closeModal">
-              <span class="close">&times;</span>
-            </button>
-            <h3 class="modal-text">Залиште свої дані, ми вам передзвонимо</h3>
-            <form class="modal-form">
-              <label class="label">Ім’я</label>
-              <input class="input" type="text"  required />
+       
 
-              <label class="label">Телефон</label>
-              <input class="input" type="tel"  required />
-
-              <label class="label">Пошта</label>
-              <input class="input" type="email"  required />
-
-              <label class="label">Коментар</label>
-              <textarea class="textarea" ></textarea>
-
-              <label class="checkbox">
-                <input type="checkbox" required />
-              
-                
-                <p id="main-text-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" id="secondary-text-checkbox">Умови договору</a> </p>
-
-              </label>
-
-              <button class="submit" type="submit">Відправити</button>
-            </form>
-          </div>
-        </div>
-
-        <script src="./script.js"></script>
+        
 
         <nav class="nav">
           <ul class="menu">
             <li class="menu-item">
-              <a class="menu-link" href="#" id="openModalBtn">Студія</a>
+              <a class="menu-link" href="#" >Студія</a>
             </li>
             <li class="menu-item">
               <a class="menu-link" href="./portfolio.html">Портфоліо</a>
@@ -100,7 +69,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button" type="button">Замовити послугу</button>
+          <button class="button" id="openModalBtn" type="button">Замовити послугу</button>
         </div>
       </section>
       <section class="features">
@@ -373,7 +342,7 @@
     <footer class="footer">
       <div class="container footer-position">
         <div class="footer-contacts">
-          <a class="logo" href="/"
+          <a class="logo-footer" href="/"
             >Web<span class="footer-studio">Studio</span></a
           >
           <address class="address">
@@ -393,6 +362,7 @@
               </li>
             </ul>
           </address>
+          
         </div>
         <div class="footer-socials">
           <h2 class="footer-socials-title">приєднуйтесь</h2>
@@ -426,12 +396,80 @@
               </a>
             </li>
           </ul>
-          <ul class="receiver-message">
-            <h2 class="emailsreceivetitle">Підписатись на розсилку</h2>
-            <input class="emails" placeholder="E-mail"></input><button><img src="./images/telegram.png"></button>
-          </ul>
+         
         </div>
+        <div class="footer-email">
+          <h2 class="emailsreceivetitle">Підписатись на розсилку</h2>
+          <form class="footer-form" action="">
+            <input class="emails" type="email" placeholder="E-mail"></input>
+            <button class="footer-button" type="button">
+              Підписатись 
+              <svg class="footer-email-icon" width="24" height="24">
+                <use href="./icons/symbol-defs.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
       </div>
+    </div>
     </footer>
+     <!-- Modal -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <button class="modal-close-btn" type="button" id="closeModal">
+              <span class="close">&times;</span>
+            </button>
+            <h3 class="modal-text">Залиште свої дані, ми вам передзвонимо</h3>
+            <form class="modal-form">
+              <div class="inputwrap">
+              <label class="label">Ім’я</label>
+              <input class="input" type="text"  required />
+              <svg class="icons">
+               <use href="./icons/sprayt-modal.svg#icon-men">
+             
+               </use>
+
+              </svg>
+</div>
+<div class="phonewrap">
+              <label class="label">Телефон</label>
+              <input class="input" type="tel"  required />
+              <svg class="icons-phone">
+              <use href="./icons/sprayt-modal.svg#icon-phone">
+
+
+              </use>
+
+              </svg>
+
+</div>
+
+<div class="emailwrap">
+              <label class="label">Пошта</label>
+              <input class="input" type="email"  required />
+              <svg class="icons-email">
+              <use href="./icons/sprayt-modal.svg#icon-email">
+
+              </use>
+
+              </svg>
+
+</div>
+              <label class="label">Коментар</label>
+              <textarea class="textarea" ></textarea>
+
+              <label class="checkbox">
+                <input type="checkbox" required />
+              
+                
+                <p id="main-text-checkbox">Погоджуюся з розсилкою та приймаю <a href="#" id="secondary-text-checkbox">Умови договору</a> </p>
+
+              </label>
+
+              <button class="button-modal" type="submit">Відправити</button>
+            </form>
+          </div>
+        </div>
+
+<script src="./script.js"></script>
   </body>
 </html>
